@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="demoapp">
+<html ng-app="geonote">
 	<head>
 		<title>HACKATHON :D</title>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
@@ -9,17 +9,12 @@
 		{% load staticfiles %}
 		<script type="text/javascript" src="{% static "geonote/angular-leaflet-directive.js" %}"></script>
 
-		<script>
-	        var app = angular.module("demoapp", ['leaflet-directive']);
-	        app.controller("DemoController", [ "$scope", function($scope) {
-	            // Nothing here!
-	        }]);
-    	</script>
+		<script type="text/javascript" src="{% static "geonote/app.geonote.js" %}"></script>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 	</head>
-	<body ng-controller="DemoController">
+	<body ng-controller="GeonoteController">
 		<leaflet width="640px" height="480px"></leaflet>
 	</body>
 </html>

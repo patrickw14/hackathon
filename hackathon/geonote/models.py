@@ -1,7 +1,8 @@
 from django.db import models
 #from django.contrib.gis.db import models as geoM
 from django.contrib.auth.models import User
-
+import time
+from datetime import datetime, timedelta
 
 # Create your models here.
 class note(models.Model):
@@ -12,6 +13,7 @@ class note(models.Model):
     startTime = models.DateTimeField(default=datetime.now())
     timeDelta = models.IntegerField()
     endTime = models.DateTimeField()
+    hidden = models.BooleanField(default=False)
 
     def __init__(self, timeDelta=30):
         if timeDelta != 30:

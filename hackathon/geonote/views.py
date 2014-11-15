@@ -8,7 +8,7 @@ import json
 
 
 def index(request):
-    return HttpResponseRedirect("http://swingbyfood.com")
+    return render(request, 'index.html')
 
 def getNotes(request):
 	if request.method == "POST":

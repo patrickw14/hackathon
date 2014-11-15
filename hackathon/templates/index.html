@@ -23,11 +23,16 @@
 			    height: 100%;
 			}
 			#submit{
-				width:100%;
+				width:60%;
+				height:10vh;
+			}
+			#cancel{
+				width:38%;
 				height:10vh;
 			}
 			#note{
 				height:20vh !important;
+				resize:none;
 			}
 			#go_to_events{
 				position: absolute;
@@ -56,6 +61,9 @@
 				top:-1000vh;
 				background-color: white;
 			}
+			body{
+				overflow-y:hidden;
+			}
 		</style>
 	</head>
 	<body ng-controller="GeonoteController">
@@ -67,12 +75,13 @@
 		<div id="submit_form">
 			<form class="text-center">
 				<textarea id="note" class="form-control"></textarea>
-				<button id="submit" type="button" class="btn btn-default">Submit</button>
+				<button id="submit" type="button" class="btn btn-primary">Submit</button>
+				<button id="cancel" type="button" class="btn btn-danger">Cancel</button>
 			</form>
 		</div>
 
 		<div id="events" >
-			
+			 <button type="button" class="close" id="events_close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 		</div>
 		<script type="text/javascript" src="{% static "geonote/app.geonote.js" %}"></script>
 		<script>
@@ -86,6 +95,14 @@
 			$("#submit").click(function(){
 
 				$("#submit_form").css("top","100vh")
+			})
+			$("#cancel").click(function(){
+
+				$("#submit_form").css("top","100vh")
+			})
+			$("#events_close").click(function(){
+				$("#events").css("top","-1000vh")
+				console.log("close")
 			})
 		</script>
 	</body>

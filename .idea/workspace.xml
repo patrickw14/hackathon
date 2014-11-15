@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="Category&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/models.py" afterPath="$PROJECT_DIR$/hackathon/geonote/models.py" />
+    <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/views.py" afterPath="$PROJECT_DIR$/hackathon/geonote/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416058588925" ignored="false" />
+    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416058694212" ignored="false" />
     <file path="/models.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416058653988" ignored="false" />
     <file path="/views.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416058633559" ignored="false" />
     <file path="/urls.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416051496813" ignored="false" />
@@ -43,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="0.46075085">
+            <state line="18" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="93" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.0">
+            <state line="59" column="4" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.82081914">
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -123,8 +122,8 @@
         <option value="$PROJECT_DIR$/hackathon/hackathon/urls.py" />
         <option value="$PROJECT_DIR$/hackathon/geonote/static/geonote/app.geonote.js" />
         <option value="$PROJECT_DIR$/hackathon/templates/index.html" />
-        <option value="$PROJECT_DIR$/hackathon/geonote/views.py" />
         <option value="$PROJECT_DIR$/hackathon/geonote/models.py" />
+        <option value="$PROJECT_DIR$/hackathon/geonote/views.py" />
       </list>
     </option>
   </component>
@@ -620,7 +619,11 @@
       <created>1416055162022</created>
       <updated>1416055162022</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Category changes">
+      <created>1416058699953</created>
+      <updated>1416058699953</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -689,7 +692,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -714,6 +717,7 @@
     <MESSAGE value="Added starttimeint to note model" />
     <MESSAGE value="Time.time yo" />
     <MESSAGE value="Category&#10;" />
+    <MESSAGE value="Category changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -821,19 +825,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
+    <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="93" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
+        <state line="18" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
+    <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="0.46075085">
-          <folding />
+        <state line="59" column="4" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.82081914">
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

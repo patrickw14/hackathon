@@ -60,3 +60,4 @@ def createNote(request):
         new_note = Note(content=content,lat=lat,lng=lng,endTime=endTime,timeDelta=30,category=cat)
         new_note.save()
         return HttpResponse(json.dumps(getNoteDict(new_note)), content_type="application/json")
+

@@ -5,7 +5,7 @@ import time
 from datetime import datetime, timedelta
 
 # Create your models here.
-class note(models.Model):
+class Note(models.Model):
     author = models.ForeignKey(User)
     content = models.TextField(max_length=140)
     lat = models.FloatField()

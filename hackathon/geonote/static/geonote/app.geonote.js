@@ -44,8 +44,18 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 			return notes;
 		},
 
-		createNote: function() {
+		createNote: function(noteMsg, lat, lng) {
+			/*$.ajax({
+				type: "POST",
+				data: {
+					content: noteMsg,
+					lat: lat,
+					lng: lng
+				},
+				url: "/"
+			})*/
 
+			console.log(noteMsg, lat, lng);
 		}
 	}
 
@@ -76,8 +86,8 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 })
 
 app.service("geoLocation", function() {
-	var lat = "0";
-	var lng = "0";
+	var lat = "32.879996";
+	var lng = "-117.237046";
 	var locationReady = false;
 
 	var locationServices = {
@@ -141,6 +151,27 @@ app.directive("mapHandler", function() {
 			function updateLocation() {
 				$scope.map.panTo($scope.currPos);
 				$scope.map.setZoom(17);
+			}
+		}
+	}
+});
+
+app.directive("viewNotesInterface", function() {
+
+});
+
+app.directive("createNoteInterface", function() {
+	return {
+		restrict: 'A',
+		replace: true,
+		controller: function($scope, notePoller, geoLocation) {
+			$scope.noteContent = "";
+
+			$scope.createNote = function() {
+				
+				var latlng = geoLocation.getLocation();
+				notePoller.createNote($scope.noteContent, latlng[0], latlng[1]);
+				$scope.noteContent = "";
 			}
 		}
 	}

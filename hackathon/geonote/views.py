@@ -1,7 +1,7 @@
 from django.shortcuts import render, render_to_response, RequestContext
 from django import forms
 from django.http import HttpResponse, HttpResponseRedirect
-from models import *
+from geonote.models import Note
 from django.contrib.auth import authenticate, login as auth_login, logout
 import json
 from annoying.decorators import ajax_request
@@ -9,11 +9,11 @@ from annoying.decorators import ajax_request
 
 
 def index(request):
-    unhidden = models.note.objects.filter(hidden=False)
-    for note in unhidden:
-        if note.endTime < datetime.now():
-            note.hidden = True
-            note.save()
+    unhidden = Note.objects.filter(hidden=False)
+    for n in unhidden:
+        if n.endTime < datetime.now():
+            n.hidden = True
+            n.save()
 
     return render(request, 'index.html')
 

@@ -74,8 +74,8 @@
 		<button id="go_to_events" type="button" class="btn btn-default">See Events</button>
 		<div id="submit_form">
 			<form class="text-center">
-				<textarea id="note" class="form-control"></textarea>
-				<button id="submit" type="button" class="btn btn-primary">Submit</button>
+				<textarea ng-model="noteContent" id="note" class="form-control"></textarea>
+				<button id="submit" ng-click="createNote()" type="button" class="btn btn-primary">Submit</button>
 				<button id="cancel" type="button" class="btn btn-danger">Cancel</button>
 			</form>
 		</div>
@@ -92,17 +92,12 @@
 
 				$("#events").css("top","0vh")
 			})
-			$("#submit").click(function(){
-
-				$("#submit_form").css("top","100vh")
-			})
 			$("#cancel").click(function(){
 
 				$("#submit_form").css("top","100vh")
 			})
 			$("#events_close").click(function(){
 				$("#events").css("top","-1000vh")
-				console.log("close")
 			})
 		</script>
 	</body>

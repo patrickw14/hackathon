@@ -165,12 +165,14 @@ app.directive("mapHandler", function() {
 				id: 'examples.map-i875mjb7'
 			}).addTo($scope.map);
 
+			var currLocationMarker = L.marker($scope.currPos).addTo($scope.map);
+
+			var markers = L.markerClusterGroup();
 
 			notePoller.startPolling();
 
 			function updateLocation() {
-				$scope.map.panTo($scope.currPos);
-				$scope.map.setZoom(17);
+				currLocationMarker.setLatLng($scope.currPos);
 			}
 
 			function updateAll() {
@@ -183,7 +185,9 @@ app.directive("mapHandler", function() {
 				angular.forEach($scope.notes, function(note) {
 					var marker = L.marker([note.lat, note.lng]).addTo($scope.map);
 					marker.bindPopup(note.content);
+					markers.addLayer(marker);
 				});
+				$scope.map.addLayer(markers);
 				$timeout(updateAll, 5100);
 			}
 		}
@@ -191,7 +195,17 @@ app.directive("mapHandler", function() {
 });
 
 app.directive("viewNotesInterface", function() {
+	return {
+		restrict: 'A',
+		replace: true,
+		controller: function($scope, notePoller, geoLocation) {
+			$scope.notes = [];
 
+			$scope.$watch(notePoller.getNotes(), function() {
+
+			})
+		}
+	}
 });
 
 app.directive("createNoteInterface", function() {
@@ -199,13 +213,9 @@ app.directive("createNoteInterface", function() {
 		restrict: 'A',
 		replace: true,
 		controller: function($scope, notePoller, geoLocation) {
-			$scope.noteContent = "";
+			$scope.notes = []
 
-			$scope.createNote = function() {
-				var latlng = geoLocation.getLocation();
-				notePoller.createNote($scope.noteContent, latlng[0], latlng[1]);
-				$scope.noteContent = "";
-			}
+			$timeout(updateAll, 2000);
 		}
 	}
 });

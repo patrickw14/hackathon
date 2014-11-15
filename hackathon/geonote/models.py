@@ -12,4 +12,6 @@ class note(models.Model):
     startTime = models.DateTimeField(auto_now_add=True)
     expirationTime = models.IntegerField()
 
+def getNoteDict(note):
+	return {"author":note["author"],"lat":note["lat"],"lng":note["lng"],"content":note["content"]}
 

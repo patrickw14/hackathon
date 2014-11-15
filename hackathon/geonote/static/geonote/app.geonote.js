@@ -44,17 +44,17 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 		},
 
 		createNote: function(noteMsg, lat, lng) {
-			$.ajax({
-				type: "POST",
-				data: {
-					content: noteMsg,
-					lat: lat,
-					lng: lng
-				},
-				url: "/create_note"
-			})
+			var url = urlTools.getURL('/create_note', {
+				content: noteMsg,
+				lat: lat,
+				lng: lng
+			});
 
-			console.log(noteMsg, lat, lng);
+			$.ajax({
+		  		url: url,
+		  		success: successCreate,
+		  		dataType: 'json'
+			});
 		}
 	}
 
@@ -70,15 +70,19 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 
 		$.ajax({
 		  url: url,
-		  success: success,
+		  success: successPoll,
 		  dataType: 'json'
 		});
 
 		$timeout(poll, 2000);
 	}
 
-	function success(data) {
+	function successPoll(data) {
 		console.log(data);
+	}
+
+	function successCreate(data) {
+
 	}
 
 	return poller;

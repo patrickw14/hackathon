@@ -25,12 +25,12 @@ def getNotes(request):
 		ne_long = request.GET.get("ne_long")
 		sw_lat = request.GET.get("sw_lat")
 		sw_long = request.GET.get("sw_long")
-		#notes = note.objects.filter(lat>ne_lat,lat<sw_lat,lng>ne_long,lng<sw_long)
+		notes = Note.objects.all()
 		# test note outputs
-		notes_output=[{"author":"hello","lat":20.11,"lng":30.11,"content":"Hola"}]
-		#notes_output=[]
-		#for note in notes:
-	#		notes_output.append(getNoteDict(note))
+		#notes_output=[{"author":"hello","lat":20.11,"lng":30.11,"content":"Hola"}]
+		notes_output=[]
+		for note in notes:
+			notes_output.append(getNoteDict(note))
 		return HttpResponse(json.dumps(notes_output), content_type="application/json")
 
 

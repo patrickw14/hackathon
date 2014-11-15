@@ -67,8 +67,9 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 			sw_lat: 5.0,
 			sw_long: 5.0
 		});
-
+		console.log(url)
 		$.ajax({
+		  type:"get",
 		  url: url,
 		  success: successPoll,
 		  dataType: 'json'

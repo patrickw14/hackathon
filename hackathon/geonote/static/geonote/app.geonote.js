@@ -44,6 +44,7 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 		},
 
 		createNote: function(noteMsg, lat, lng) {
+			console.log("Asdsada");
 			var url = urlTools.getURL('/create_note/', {
 				content: noteMsg,
 				lat: lat,
@@ -218,13 +219,13 @@ app.directive("createNoteInterface", function() {
 	return {
 		restrict: 'A',
 		replace: true,
-		controller: function($scope, $timeout, notePoller, geoLocation) {
-			$scope.notes = []
+		controller: function($scope, notePoller, geoLocation) {
+			$scope.noteContent = "";
 
-			$timeout(updateAll, 2000);
-
-			function updateAll() {
-				
+			$scope.createNote = function() {
+				var latlng = geoLocation.getLocation();
+				notePoller.createNote($scope.noteContent, latlng[0], latlng[1]);
+				$scope.noteContent = "";
 			}
 		}
 	}

@@ -41,7 +41,7 @@ def getRecentNotes(request):
         sw_lat = request.GET.get("sw_lat")
         sw_long = request.GET.get("sw_long")
         ts = request.GET.get("timestamp")
-        notes = Note.objects.filter(startTime__gt=ts)
+        notes = Note.objects.filter(startTime__gt=datetime(ts))
         # test note outputs
         #notes_output=[{"author":"hello","lat":20.11,"lng":30.11,"content":"Hola"}]
         notes_output=[]

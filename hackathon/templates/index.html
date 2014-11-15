@@ -39,6 +39,8 @@
 			#note{
 				height:20vh !important;
 				resize:none;
+				width:80vw;
+				display: inline-block;;
 			}
 			#go_to_events{
 				position: absolute;
@@ -59,6 +61,7 @@
 				width:100%;
 				position: absolute;
 				top:100vh;
+				background-color: white;
 			}
 			#events{
 				min-height:50vh;
@@ -79,8 +82,16 @@
 		<button id="go_to_form" type="button" class="btn btn-default">Create Note</button>
 		<button id="go_to_events" type="button" class="btn btn-default">See Events</button>
 		<div create-note-interface="" id="submit_form">
-			<form class="text-center">
+			<form>
 				<textarea ng-model="noteContent" id="note" class="form-control"></textarea>
+				<select class="form-control" style="width:10vw;display:inline-block;">
+				  <option value="1">Drinks</option>
+				  <option value="2">Friends</option>
+				  <option value="3">Love</option>
+				  <option value="4">Sports</option>
+				  <option value="5">Coffee</option>
+				  <option value="6">Food</option>
+				</select>
 				<button id="submit" ng-click="createNote()" type="button" class="btn btn-primary">Submit</button>
 				<button id="cancel" type="button" class="btn btn-danger">Cancel</button>
 			</form>

@@ -192,7 +192,7 @@ app.directive("mapHandler", function() {
 					  var marker = L.marker([note.lat, note.lng], {icon: redMarker}).addTo($scope.map);
 					  marker.bindPopup(note.content);
 					  markers.addLayer(marker);
-					  //$("#events").append("<div class='row text-center'><h3>"+note.content+"</h3></div>")
+					  $("#events").append("<div class='row text-center'><i class='fa fa-cutlery'<h3>"+note.content+"</h3></i></div>")
 				});
 				$scope.map.addLayer(markers);
 				$timeout(updateAll, 5100);

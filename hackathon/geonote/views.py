@@ -54,7 +54,7 @@ def createNote(request):
 		content = request.GET.get("content")
 		lat = request.GET.get("lat")
 		lng = request.GET.get("lng")
-        cat = request.GET.get("category")
+		cat = request.GET.get("category")
 		#author = request.POST["author"]
 		endTime = datetime.now()+timedelta(minutes=30)
 		new_note = Note(content=content,lat=lat,lng=lng,endTime=endTime,timeDelta=30,category=cat)

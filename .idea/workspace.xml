@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/models.py" afterPath="$PROJECT_DIR$/hackathon/geonote/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/views.py" afterPath="$PROJECT_DIR$/hackathon/geonote/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416042249769" ignored="false" />
-    <file path="/models.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416042109355" ignored="false" />
+    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416042260602" ignored="false" />
+    <file path="/models.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416042826436" ignored="false" />
+    <file path="/views.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043042428" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="624" selection-end="624" vertical-scroll-proportion="0.30439684">
+            <state line="22" column="19" selection-start="828" selection-end="828" vertical-scroll-proportion="0.3720406">
               <folding />
             </state>
           </provider>
@@ -48,7 +51,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="14" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -75,6 +78,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/hackathon/geonote/models.py" />
+        <option value="$PROJECT_DIR$/hackathon/geonote/views.py" />
       </list>
     </option>
   </component>
@@ -342,7 +346,11 @@
       <created>1416042250971</created>
       <updated>1416042250971</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added imports to fix last commit.">
+      <created>1416042262225</created>
+      <updated>1416042262225</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -455,7 +463,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="14" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#71#0" expanded="true" />
           </folding>
@@ -464,7 +472,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="624" selection-end="624" vertical-scroll-proportion="0.30439684">
+        <state line="22" column="19" selection-start="828" selection-end="828" vertical-scroll-proportion="0.3720406">
           <folding />
         </state>
       </provider>

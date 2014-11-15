@@ -15,12 +15,14 @@ class note(models.Model):
     endTime = models.DateTimeField()
     hidden = models.BooleanField(default=False)
 
-    def __init__(self, timeDelta=30):
+    def __init__(self, lat=0, lng=0,content="Empty note", timeDelta=30):
         if timeDelta != 30:
             self.endTime = datetime.now()+timedelta(minutes=timeDelta)
         else:
             self.endTime = datetime.now()+timedelta(minutes=30)
-
+        self.lat = lat
+        self.lng = lng
+        self.content = content
         self.save()
 
 

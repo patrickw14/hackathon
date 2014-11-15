@@ -56,6 +56,6 @@ def createNote(request):
 		lng = request.GET.get("lng")
 		#author = request.POST["author"]
 		endTime = datetime.now()+timedelta(minutes=30)
-		new_note = Note(content=content,lat=lat,lng=lng,endTime=endTime,timeDelta=30)
+		new_note = Note(content=content,lat=lat,lng=lng,endTime=endTime,timeDelta=30,category=0)
 		new_note.save()
 		return HttpResponse(json.dumps(getNoteDict(new_note)), content_type="application/json")

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/models.py" afterPath="$PROJECT_DIR$/hackathon/geonote/models.py" />
+    <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="Added url for createNote">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/hackathon/urls.py" afterPath="$PROJECT_DIR$/hackathon/hackathon/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/views.py" afterPath="$PROJECT_DIR$/hackathon/geonote/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416042260602" ignored="false" />
+    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043643460" ignored="false" />
     <file path="/models.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416042826436" ignored="false" />
-    <file path="/views.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043042428" ignored="false" />
+    <file path="/views.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043657687" ignored="false" />
+    <file path="/urls.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043576153" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +40,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="19" selection-start="828" selection-end="828" vertical-scroll-proportion="0.3720406">
+            <state line="12" column="43" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+            <state line="11" column="14" selection-start="370" selection-end="370" vertical-scroll-proportion="0.1860203">
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackathon/hackathon/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="34" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,6 +90,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/hackathon/geonote/models.py" />
+        <option value="$PROJECT_DIR$/hackathon/hackathon/urls.py" />
         <option value="$PROJECT_DIR$/hackathon/geonote/views.py" />
       </list>
     </option>
@@ -350,7 +363,11 @@
       <created>1416042262225</created>
       <updated>1416042262225</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added fields to note.__init__, added hidden note updating to index view">
+      <created>1416043143069</created>
+      <updated>1416043143069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -419,7 +436,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added imports to fix last commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added fields to note.__init__, added hidden note updating to index view" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -435,6 +452,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Added models.note.init function" />
     <MESSAGE value="Added imports to fix last commit." />
+    <MESSAGE value="Added fields to note.__init__, added hidden note updating to index view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -461,19 +479,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
+    <entry file="file://$PROJECT_DIR$/hackathon/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
+        <state line="44" column="13" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.764774">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="828" selection-end="828" vertical-scroll-proportion="0.3720406">
+        <state line="12" column="43" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackathon/hackathon/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="370" selection-end="370" vertical-scroll-proportion="0.1860203">
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

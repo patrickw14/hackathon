@@ -12,4 +12,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^get_notes/',views.getNotes,name='getNotes'),
     url(r'^',views.index,name='index'),
+    url(r'^create_note', views.createNote, name='createNote'),
+
 )

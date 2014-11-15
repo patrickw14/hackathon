@@ -9,7 +9,7 @@ from annoying.decorators import ajax_request
 
 
 def index(request):
-    unhidden = note.objects.filter(hidden=False)
+    unhidden = models.note.objects.filter(hidden=False)
     for note in unhidden:
         if note.endTime < datetime.now():
             note.hidden = True

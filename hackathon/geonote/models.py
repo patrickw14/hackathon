@@ -11,7 +11,7 @@ class Note(models.Model):
     lat = models.FloatField()
     lng = models.FloatField()
     startTime = models.DateTimeField(default=datetime.now())
-    startTimeInt = models.IntegerField(default=time.now())
+    startTimeInt = models.IntegerField(default=time.time())
     timeDelta = models.IntegerField()
     endTime = models.DateTimeField()
     hidden = models.BooleanField(default=False)

@@ -15,6 +15,7 @@ class Note(models.Model):
     timeDelta = models.IntegerField()
     endTime = models.DateTimeField()
     hidden = models.BooleanField(default=False)
+    category = models.IntegerField()
 
 
 

@@ -13,6 +13,7 @@ app.factory("urlTools", function (){
 				url += ('?' + value + '=' + key)
 			else
 				url += ('&' + value + '=' + key)
+			i=i+1
 		});
 
 		console.log(url);
@@ -44,7 +45,7 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 		},
 
 		createNote: function(noteMsg, lat, lng) {
-			var url = urlTools.getURL('/create_note', {
+			var url = urlTools.getURL('/create_note/', {
 				content: noteMsg,
 				lat: lat,
 				lng: lng

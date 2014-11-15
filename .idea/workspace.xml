@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="Added url for createNote">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/hackathon/urls.py" afterPath="$PROJECT_DIR$/hackathon/hackathon/urls.py" />
+    <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hackathon.iml" afterPath="$PROJECT_DIR$/.idea/hackathon.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/views.py" afterPath="$PROJECT_DIR$/hackathon/geonote/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043643460" ignored="false" />
-    <file path="/models.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416042826436" ignored="false" />
-    <file path="/views.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043657687" ignored="false" />
+    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043671653" ignored="false" />
+    <file path="/models.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416044531708" ignored="false" />
+    <file path="/views.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416046744758" ignored="false" />
     <file path="/urls.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043576153" ignored="false" />
+    <file path="/usr/local/lib/python2.7/dist-packages/django/http/response.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416046459853" ignored="false" />
+    <file path="/usr/local/lib/python2.7/dist-packages/django/db/models/base.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416046459853" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="43" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+            <state line="18" column="23" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,9 +55,18 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="370" selection-end="370" vertical-scroll-proportion="0.1860203">
+            <state line="3" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.07679181">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackathon/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="14" selection-start="2557" selection-end="2557" vertical-scroll-proportion="-8.791667">
               <folding>
-                <element signature="e#0#71#0" expanded="true" />
+                <element signature="tag#style#0;tag#head#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -63,7 +75,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackathon/hackathon/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="34" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+            <state line="14" column="22" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -89,8 +101,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hackathon/geonote/models.py" />
         <option value="$PROJECT_DIR$/hackathon/hackathon/urls.py" />
+        <option value="$PROJECT_DIR$/hackathon/geonote/models.py" />
+        <option value="$PROJECT_DIR$/hackathon/templates/index.html" />
+        <option value="/usr/local/lib/python2.7/dist-packages/django/http/request.py" />
         <option value="$PROJECT_DIR$/hackathon/geonote/views.py" />
       </list>
     </option>
@@ -230,50 +244,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annoying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackathon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annoying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -282,7 +252,8 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -300,7 +271,186 @@
       <recent name="$PROJECT_DIR$/hackathon/geonote" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hackathon/geonote/models.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hackathon/geonote/static/geonote/app.geonote.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hackathon/geonote/views.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hackathon/hackathon/urls.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hackathon/templates/index.html</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
+  <component name="RunManager" selected="Python.manage.py runserver">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackathon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackathon" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackathon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -321,7 +471,28 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="manage.py runserver" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hackathon" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackathon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hackathon/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.manage.py runserver" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -367,7 +538,11 @@
       <created>1416043143069</created>
       <updated>1416043143069</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added url for createNote. Added models to the note.objects line">
+      <created>1416043672967</created>
+      <updated>1416043672967</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -379,12 +554,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2525801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2525801" sideWeight="0.67031765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -436,7 +611,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fields to note.__init__, added hidden note updating to index view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added url for createNote. Added models to the note.objects line" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -453,6 +628,7 @@
     <MESSAGE value="Added models.note.init function" />
     <MESSAGE value="Added imports to fix last commit." />
     <MESSAGE value="Added fields to note.__init__, added hidden note updating to index view" />
+    <MESSAGE value="Added url for createNote. Added models to the note.objects line" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -481,33 +657,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="13" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.764774">
-          <folding />
+        <state line="84" column="14" selection-start="2557" selection-end="2557" vertical-scroll-proportion="-8.791667">
+          <folding>
+            <element signature="tag#style#0;tag#head#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/geonote/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+        <state line="18" column="23" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/hackathon/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+        <state line="14" column="22" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/http/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="13" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.3327645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="370" selection-end="370" vertical-scroll-proportion="0.1860203">
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
+        <state line="3" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.07679181">
+          <folding />
         </state>
       </provider>
     </entry>

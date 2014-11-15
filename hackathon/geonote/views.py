@@ -1,10 +1,11 @@
 from django.shortcuts import render, render_to_response, RequestContext
 from django import forms
 from django.http import HttpResponse, HttpResponseRedirect
-from geonote.models import Note
 from django.contrib.auth import authenticate, login as auth_login, logout
 import json
 from annoying.decorators import ajax_request
+import datetime
+from models import *
 # Create your views here.
 
 
@@ -35,12 +36,13 @@ def getNotes(request):
 
 
 def createNote(request):
-	if request.method == "POST":
-		content = request.POST["content"]
-		lat = request.POST["lat"]
-		lng = request.POST["lng"]
+	if request.method == "GET":
+		print "hallo"
+		content = request.GET("content")
+		lat = request.GET("lat")
+		lng = request.GET("lng")
 		#author = request.POST["author"]
-		new_note = note(content=content,lat=lat,lng=lng)
+		new_note = Note(content=content,lat=lat,lng=lng)
 		new_note.save()
 		#returns new note
 		return HttpResponse(json.dumps(getNoteDict(new_note)), content_type="application/json")

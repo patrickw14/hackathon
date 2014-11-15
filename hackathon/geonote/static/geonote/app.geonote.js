@@ -183,9 +183,14 @@ app.directive("mapHandler", function() {
 				$scope.notes = notePoller.getNotes();
 
 				angular.forEach($scope.notes, function(note) {
-					var marker = L.marker([note.lat, note.lng]).addTo($scope.map);
-					marker.bindPopup(note.content);
-					markers.addLayer(marker);
+					 var redMarker = L.AwesomeMarkers.icon({
+					    icon: 'cutlery',
+					    markerColor: 'red'
+					  });
+
+					  var marker = L.marker([note.lat, note.lng], {icon: redMarker}).addTo($scope.map);
+					  marker.bindPopup(note.content);
+					  markers.addLayer(marker);
 				});
 				$scope.map.addLayer(markers);
 				$timeout(updateAll, 5100);

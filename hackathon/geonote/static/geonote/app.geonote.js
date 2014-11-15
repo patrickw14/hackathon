@@ -184,15 +184,39 @@ app.directive("mapHandler", function() {
 				$scope.notes = notePoller.getNotes();
 
 				angular.forEach($scope.notes, function(note) {
+					 var cat = note.category
+					 var icon_new=""
+					 if(cat=="Food")
+					 {
+					 	icon_new="cutlery"
+					 }
+					 else if(cat=="Sports")
+					 {
+					 	icon_new="bicycle"
+					 }
+					 else if(cat=="Drinks")
+					 {
+					 	icon_new="glass"
+					 }
+					 else if(cat=="Love")
+					 {
+					 	icon_new="heart"
+					 }
+					 else if(cat=="Friends")
+					 {
+					 	icon_new="users"
+					 }
+					 console.log("new")
+					 console.log(icon_new)
 					 var redMarker = L.AwesomeMarkers.icon({
-					    icon: 'cutlery',
+					    icon: icon_new,
 					    markerColor: 'red'
 					  });
 
 					  var marker = L.marker([note.lat, note.lng], {icon: redMarker}).addTo($scope.map);
 					  marker.bindPopup(note.content);
 					  markers.addLayer(marker);
-					  $("#events").append("<div class='row text-center'><i class='fa fa-cutlery'<h3>"+note.content+"</h3></i></div>")
+					  $("#events").append("<div class='row text-center'><i class='fa fa-"+icon_new+"'<h3>"+note.content+"</h3></i></div>")
 				});
 				$scope.map.addLayer(markers);
 				$timeout(updateAll, 5100);

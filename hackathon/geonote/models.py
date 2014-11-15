@@ -25,5 +25,5 @@ class User(models.Model):
 
 
 def getNoteDict(note):
-	return {"lat":note.lat,"lng":note.lng,"content":note.content}
+	return {"lat":note.lat,"lng":note.lng,"content":note.content,"category":note.category}
 

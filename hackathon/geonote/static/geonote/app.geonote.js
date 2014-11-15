@@ -31,7 +31,6 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 
 	var poller = {
 		startPolling: function() {
-			console.log("lets start!!");
 			polling = true;
 			poll();
 		},
@@ -45,15 +44,15 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 		},
 
 		createNote: function(noteMsg, lat, lng) {
-			/*$.ajax({
+			$.ajax({
 				type: "POST",
 				data: {
 					content: noteMsg,
 					lat: lat,
 					lng: lng
 				},
-				url: "/"
-			})*/
+				url: "/create_note"
+			})
 
 			console.log(noteMsg, lat, lng);
 		}
@@ -62,7 +61,7 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 	function poll() {
 		if (!polling) return;
 
-		var url = urlTools.getURL('/get_notes/', {
+		var url = urlTools.getURL('/get_notes', {
 			ne_lat: 5.0,
 			ne_long: 5.0,
 			sw_lat: 5.0,
@@ -168,7 +167,6 @@ app.directive("createNoteInterface", function() {
 			$scope.noteContent = "";
 
 			$scope.createNote = function() {
-				
 				var latlng = geoLocation.getLocation();
 				notePoller.createNote($scope.noteContent, latlng[0], latlng[1]);
 				$scope.noteContent = "";

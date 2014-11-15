@@ -36,6 +36,7 @@ def getNotes(request):
 
 def createNote(request):
 	if request.method == "POST":
+		print "hallo"
 		content = request.POST["content"]
 		lat = request.POST["lat"]
 		lng = request.POST["lng"]

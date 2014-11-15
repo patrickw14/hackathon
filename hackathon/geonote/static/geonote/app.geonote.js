@@ -43,12 +43,12 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 			return notes;
 		},
 
-		createNote: function(noteMsg, lat, lng) {
-			console.log("Asdsada");
+		createNote: function(noteMsg, lat, lng, cat) {
 			var url = urlTools.getURL('/create_note/', {
 				content: noteMsg,
 				lat: lat,
-				lng: lng
+				lng: lng,
+				category: cat
 			});
 
 			$.ajax({
@@ -221,10 +221,12 @@ app.directive("createNoteInterface", function() {
 		replace: true,
 		controller: function($scope, notePoller, geoLocation) {
 			$scope.noteContent = "";
+			$scope.categories = [{name: "Drinks"}, {name: "Friends"}, {name: "Love"}, {name: "Sports"}, {name: "Food"}, {name: "Misc"}];
+			$scope.category = $scope.categories[5];
 
 			$scope.createNote = function() {
 				var latlng = geoLocation.getLocation();
-				notePoller.createNote($scope.noteContent, latlng[0], latlng[1]);
+				notePoller.createNote($scope.noteContent, latlng[0], latlng[1], $scope.category.name);
 				$scope.noteContent = "";
 			}
 		}

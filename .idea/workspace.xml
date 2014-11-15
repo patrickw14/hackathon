@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/geonote/views.py" afterPath="$PROJECT_DIR$/hackathon/geonote/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416049411648" ignored="false" />
+    <file path="/Dummy.txt" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416051207664" ignored="false" />
     <file path="/models.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416047766538" ignored="false" />
     <file path="/views.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416051146896" ignored="false" />
     <file path="/urls.py" changelist="08b03a57-a88e-4b7a-bd8c-53388ba2f53e" time="1416043576153" ignored="false" />
@@ -73,7 +72,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="41" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.5905512">
+            <state line="42" column="41" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.59188277">
               <folding />
             </state>
           </provider>
@@ -470,13 +469,18 @@
       <created>1416046785772</created>
       <updated>1416046785772</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="getRecentNotes function added">
+      <created>1416051211381</created>
+      <updated>1416051211381</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="0" width="1889" height="1059" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -491,7 +495,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -539,7 +542,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed create from post to get" />
+    <option name="LAST_COMMIT_MESSAGE" value="getRecentNotes function added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -558,6 +561,7 @@
     <MESSAGE value="Added fields to note.__init__, added hidden note updating to index view" />
     <MESSAGE value="Added url for createNote. Added models to the note.objects line" />
     <MESSAGE value="Changed create from post to get" />
+    <MESSAGE value="getRecentNotes function added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -672,7 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/geonote/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="41" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.5905512">
+        <state line="42" column="41" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.59188277">
           <folding />
         </state>
       </provider>

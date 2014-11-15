@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+
 <html ng-app="geonote">
 	<head>
 		<title>HACKATHON :D</title>
@@ -6,15 +8,26 @@
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-		{% load staticfiles %}
-		<script type="text/javascript" src="{% static "geonote/angular-leaflet-directive.js" %}"></script>
-
-		<script type="text/javascript" src="{% static "geonote/app.geonote.js" %}"></script>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<style>
+			body {
+			    padding: 0;
+			    margin: 0;
+			}
+			html, body, #map {
+			    height: 100%;
+			}
+		</style>
 	</head>
 	<body ng-controller="GeonoteController">
-		<leaflet width="640px" height="480px"></leaflet>
+		<div style="width: 100%; height: 100%;" map-handler="">
+			<div id="map" style="width: 100%; height: 100%;"></div>
+		</div>
+		<script type="text/javascript" src="{% static "geonote/app.geonote.js" %}"></script>
 	</body>
 </html>

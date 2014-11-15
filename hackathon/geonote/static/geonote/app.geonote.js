@@ -214,6 +214,7 @@ app.directive("viewNotesInterface", function() {
 });
 
 app.directive("createNoteInterface", function() {
+	/*
 	return {
 		restrict: 'A',
 		replace: true,
@@ -222,7 +223,7 @@ app.directive("createNoteInterface", function() {
 
 			$timeout(updateAll, 2000);
 		}
-	}
+	}*/
 });
 
 app.controller("GeonoteController", [ "$scope", 'notePoller', 'geoLocation', function($scope, notePoller, geoLocation) {

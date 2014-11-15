@@ -16,8 +16,6 @@ app.factory("urlTools", function (){
 			i=i+1
 		});
 
-		console.log(url);
-
 		return url;
 	}
 
@@ -29,6 +27,7 @@ app.factory("urlTools", function (){
 app.service("notePoller", function($timeout, $http, urlTools) {
 	var notes = [];
 	var polling = false;
+	var lastPollTime;
 
 	var poller = {
 		startPolling: function() {
@@ -62,25 +61,49 @@ app.service("notePoller", function($timeout, $http, urlTools) {
 	function poll() {
 		if (!polling) return;
 
-		var url = urlTools.getURL('/get_notes', {
-			ne_lat: 5.0,
-			ne_long: 5.0,
-			sw_lat: 5.0,
-			sw_long: 5.0
-		});
-		console.log(url)
-		$.ajax({
-		  type:"get",
-		  url: url,
-		  success: successPoll,
-		  dataType: 'json'
-		});
+		if (!lastPollTime) {
+			console.log("1");
+			lastPollTime = Math.round(new Date().getTime() / 1000);
 
-		$timeout(poll, 2000);
+			var url = urlTools.getURL('/get_notes', {
+				ne_lat: 5.0,
+				ne_long: 5.0,
+				sw_lat: 5.0,
+				sw_long: 5.0
+			});
+
+			$.ajax({
+			  type:"get",
+			  url: url,
+			  success: successPoll,
+			  dataType: 'json'
+			});
+		} else {
+			console.log(lastPollTime);
+			var url = urlTools.getURL('/get_recent_notes', {
+				ne_lat: 5.0,
+				ne_long: 5.0,
+				sw_lat: 5.0,
+				sw_long: 5.0,
+				timestamp: lastPollTime
+			});
+
+			lastPollTime = Math.round(new Date().getTime() / 1000);
+
+			$.ajax({
+			  type:"get",
+			  url: url,
+			  success: successPoll,
+			  dataType: 'json'
+			});
+		}
+
+		$timeout(poll, 5000);
 	}
 
 	function successPoll(data) {
 		console.log(data);
+		notes = data;
 	}
 
 	function successCreate(data) {
@@ -133,15 +156,7 @@ app.directive("mapHandler", function() {
 
 			geoLocation.computeLocation();
 
-			$timeout(function() {
-				if (geoLocation.locationReady()) {
-					$scope.currPos = geoLocation.getLocation();
-					updateLocation();
-					$scope.notes = notePoller.getNotes();
-				}
-
-			}, 2000);
-
+			$timeout(updateAll, 2000);
 
 			$scope.map = L.map('map').setView($scope.currPos, 15);
 
@@ -156,6 +171,20 @@ app.directive("mapHandler", function() {
 			function updateLocation() {
 				$scope.map.panTo($scope.currPos);
 				$scope.map.setZoom(17);
+			}
+
+			function updateAll() {
+				if (geoLocation.locationReady()) {
+					$scope.currPos = geoLocation.getLocation();
+					updateLocation();
+				}
+				$scope.notes = notePoller.getNotes();
+
+				angular.forEach($scope.notes, function(note) {
+					var marker = L.marker([note.lat, note.lng]).addTo($scope.map);
+					marker.bindPopup(note.content);
+				});
+				$timeout(updateAll, 5100);
 			}
 		}
 	}

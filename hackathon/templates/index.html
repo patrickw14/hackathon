@@ -22,12 +22,71 @@
 			html, body, #map {
 			    height: 100%;
 			}
+			#submit{
+				width:100%;
+				height:10vh;
+			}
+			#note{
+				height:20vh !important;
+			}
+			#go_to_events{
+				position: absolute;
+				top:0vh;
+				height:10vh;
+				width:100%;
+				background: rgba(255,255,255,0.5);
+			}
+			#go_to_form{
+				position: absolute;
+				top:90vh;
+				height:10vh;
+				width:100%;
+				background: rgba(255,255,255,0.5);
+			}
+			#submit_form{
+				height:30vh;
+				width:100%;
+				position: absolute;
+				top:100vh;
+			}
+			#events{
+				min-height:50vh;
+				width:100%;
+				position: absolute;
+				top:-1000vh;
+				background-color: white;
+			}
 		</style>
 	</head>
 	<body ng-controller="GeonoteController">
 		<div style="width: 100%; height: 100%;" map-handler="">
 			<div id="map" style="width: 100%; height: 100%;"></div>
 		</div>
+		<button id="go_to_form" type="button" class="btn btn-default">Create Note</button>
+		<button id="go_to_events" type="button" class="btn btn-default">See Events</button>
+		<div id="submit_form">
+			<form class="text-center">
+				<textarea id="note" class="form-control"></textarea>
+				<button id="submit" type="button" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+
+		<div id="events" >
+			
+		</div>
 		<script type="text/javascript" src="{% static "geonote/app.geonote.js" %}"></script>
+		<script>
+			$("#go_to_form").click(function(){
+				$("#submit_form").css("top","70vh")
+			})
+			$("#go_to_events").click(function(){
+
+				$("#events").css("top","0vh")
+			})
+			$("#submit").click(function(){
+
+				$("#submit_form").css("top","100vh")
+			})
+		</script>
 	</body>
 </html>
